@@ -2,8 +2,6 @@
 (noun) def. a very brief period of time.
 capture life's daily tasks and share with your friends. experience life from different perspectives and stay in touch even when you're miles apart.
 
----
-
 ## User Stories
 
 1. User should be able to create a "moment" and save to their individual profile.
@@ -20,8 +18,6 @@ capture life's daily tasks and share with your friends. experience life from dif
 ## Stretch:
 
 1. Retrieve goal by a specific day
-
----
 
 ## Tables
 
