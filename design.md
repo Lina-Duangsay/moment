@@ -2,7 +2,6 @@
 (noun) def. a very brief period of time.
 capture life's daily tasks and share with your friends. experience life from different perspectives and stay in touch even when you're miles apart.
 
----
 
 ## User Stories
 
@@ -21,7 +20,6 @@ capture life's daily tasks and share with your friends. experience life from dif
 
 1. Retrieve goal by a specific day
 
----
 
 ## Tables
 
@@ -38,6 +36,8 @@ capture life's daily tasks and share with your friends. experience life from dif
             1. Uses a GSI to sort by username/userId.
             2. Display by username -> privacy 
 
+---
+
 2. Comments
    1. Comments for each moment. 
       1. Moment ID: String, partition key. key referencing the corresponding Moment in the Moments table
@@ -51,6 +51,8 @@ capture life's daily tasks and share with your friends. experience life from dif
 > to display comments for a moment, query the Comments table based on the Moment ID and retrieve all comments associated with that Moment ID.
 > separates the comments into a separate table, which can help with scalability and performance as the number of comments grows. allows for more flexibility in managing and querying comments independently from moments.
 
+---
+
 3. Users
    1. Every user is held here.
       1. Username: String, partition key (handed in through cognito/auth token)
@@ -60,8 +62,6 @@ capture life's daily tasks and share with your friends. experience life from dif
       5. Moments list: List, list of moments (titles only)
       6. Friends: Integer, amount of friends
       7. Friends list: List, list of friends (usernames)
-
----
 
 ## Endpoints
 
